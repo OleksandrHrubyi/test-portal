@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./index.js"],"names":[],"mappings":"2IAAA,6B","file":"main.2f7b86ac091f74dce11c.js","sourcesContent":["import './sass/main.scss';\n\nimport 'material-design-icons/iconfont/material-icons.css';\n"],"sourceRoot":""}
