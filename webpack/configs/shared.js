@@ -2,8 +2,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const WebpackBar = require('webpackbar');
 const paths = require('../utils/paths');
-const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
-
 
 module.exports = env => ({
   mode: env.mode,
@@ -73,6 +71,5 @@ module.exports = env => ({
     new CleanWebpackPlugin(),
     new FriendlyErrorsWebpackPlugin(),
     new WebpackBar(),
-     new LodashModuleReplacementPlugin(),
   ],
 });

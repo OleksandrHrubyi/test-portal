@@ -1,8 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
-
 
 module.exports = env => ({
   devtool: 'source-map',
@@ -51,15 +49,10 @@ module.exports = env => ({
         useShortDoctype: true,
       },
     }),
-       new LodashModuleReplacementPlugin({
-         'collections': true,
-         'paths': true,
-    }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
       chunkFilename: '[name].[id].[contenthash].css',
     }),
     new OptimizeCssAssetsPlugin({}),
-    
   ],
 });
